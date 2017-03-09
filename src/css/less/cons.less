@@ -1,0 +1,133 @@
+.cons {
+	padding: 105px 0 100px;
+	background-image: url(../../../src/img/dsg/bg/cons-bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	background-color: #95c11f;
+
+}
+.cons-cnt {
+	max-width: 735px;
+}
+.cons-cnt__hdr-cnt {
+	max-width: 500px;
+}
+.cons-cnt__hdr {
+	color: #f8fceb;
+	font-size: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+
+	@media @tablet{
+		text-align: left;
+	}
+}
+.cons-cnt__txt-cnt {
+	margin-top: 20px;
+	text-align: center;
+
+	@media @tablet{
+		text-align: left;
+	}
+}
+.cons-cnt__txt {
+	color: #fefefe;
+	font-size: 18px;
+	font-weight: 100;
+	margin: 0;
+	line-height: 1.2;
+}
+
+.cons-cnt__form {
+	margin-top: 30px;
+	text-align: center;
+
+	@media @tablet{
+		text-align: left;
+	}
+
+}
+.form-group.cons-cnt__form-name-cnt,
+.form-group.cons-cnt__form-tel-cnt {
+	
+
+	@media @tablet{
+		margin-right: 25px;
+	}
+
+}
+.form-group .form-control.cons-cnt__form-name,
+.form-group .form-control.cons-cnt__form-tel {
+	width: 225px;
+	height: 39px;
+	border: 1px solid #ffffff;
+	color: #fefefe;
+	font-size: 16px;
+	font-weight: 100;
+	background-color: transparent;
+	border-radius: 0;
+	margin: 0 auto;
+
+	&::-webkit-input-placeholder{
+		color: #fefefe;
+		font-size: 16px;
+	}
+
+	&::-moz-placeholder{
+		color: #fefefe;
+		font-size: 16px;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow:inset 0px 0px 36px rgba(247, 239, 5, 0.48);
+	}
+
+
+}
+
+.btn-default.cons-cnt__form-btn {
+	width: 225px;
+	height: 39px;
+	background-color: #fff15f;
+	color: #2c3473;
+	font-size: 16px;
+	font-weight: 500;
+	border: 0;
+	border-radius: 0;
+	position: relative;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: darken(#fff15f, 5%);
+	}
+
+	&::after {
+		content: '';
+		width: 110px;
+		height: 158px;
+		background-image: url(../../../src/img/dsg/cons-arrow.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		position: absolute;
+		right: -90px;
+		bottom: 20px;
+		transition: all 0.2s linear;
+		display: none;
+
+		@media @tablet {
+			display: block;
+		}
+	}
+
+	&:hover::after {
+		right: -75px;
+		bottom: 16px;
+	}
+}
