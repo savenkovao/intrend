@@ -3,8 +3,12 @@
 	background-image: url(../../../src/img/dsg/bg/cons-bg.png);
 	background-repeat: no-repeat;
 	background-position: left;
-	background-size: contain;
+	background-size: cover;
 	background-color: #95c11f;
+
+	@media @laptop {
+		background-size: contain;
+	}
 
 }
 .cons-cnt {
@@ -56,6 +60,8 @@
 
 	@media @tablet{
 		margin-right: 25px;
+    margin-bottom: 15px;
+  
 	}
 
 }
@@ -94,6 +100,7 @@
 	width: 225px;
 	height: 39px;
 	background-color: #fff15f;
+	margin-bottom: 15px;
 	color: #2c3473;
 	font-size: 16px;
 	font-weight: 500;
