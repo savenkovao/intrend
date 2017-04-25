@@ -734,6 +734,15 @@ body {
   margin: 30px auto;
   text-align: center;
 }
+.modal.in .modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+}
 @media only screen and (min-width: 768px) {
   .form-group.modal-1__form-name-cnt:first-child {
     margin-right: 20px;
